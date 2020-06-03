@@ -9,6 +9,8 @@ app.use(bodyParser());
 //引入不同的接口请求文件
 const test = require('./router/test.js');
 test(app)
+const user = require('./router/user.js');
+user(app)
 
 app.listen(3000,()=>{
     console.log('starting at port 3000');
